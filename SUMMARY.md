@@ -8,5 +8,6 @@
         * [WDAS](beamforming/WDAS/WDAS.md)
     * [distantASR](distantASR/distantASR.md)
     * [AI学习](AI学习/AI学习.md)
+    * [网页&本地收藏](网页&本地收藏/网页&本地收藏.md)
     * [杂项](杂项/杂项.md)
 
