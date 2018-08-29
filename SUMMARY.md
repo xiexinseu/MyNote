@@ -10,4 +10,6 @@
     * [AI学习](AI学习/AI学习.md)
     * [网页&本地收藏](网页&本地收藏/网页&本地收藏.md)
     * [杂项](杂项/杂项.md)
+        * [vscode内存查看](杂项/vscode内存查看/vscode内存查看.md)
+        * [vscode调试c_c++](杂项/vscode调试c_c++/vscode调试c_c++.md)
 
