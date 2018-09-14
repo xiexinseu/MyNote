@@ -1,7 +1,9 @@
 # gitbook
 
+[TOC]
 
-<!-- toc -->
+
+
 ## gitbook安装：
 
 [gitbook安装：](https://blog.csdn.net/feosun/article/details/72806825)
@@ -14,7 +16,7 @@
 [显示或隐藏toc插件](https://cnodejs.org/topic/575229332420978970d4a5f0)
 
 在book.js或book.json
-```
+```json
 {
     "plugins": ["toc2"],
     "pluginsConfig": {
@@ -38,7 +40,7 @@
 [插件网址如下：](http://www.css88.com/archives/6622)
 
 
-```
+```json
 // book.json
 {
   "title": "Webpack 中文指南",

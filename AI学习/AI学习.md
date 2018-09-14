@@ -1,9 +1,17 @@
 # AI学习
 
-<!-- toc -->
+[TOC]
+
 本文涵盖了神经网络结构、机器学习、TensorFlow、Pandas、Numpy、Python、Scikit-Learn、Scipy等的基本概念与使用方法。
+
+
+
+
+
 来源：https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463
+
 ## 神经网络
+
 ![神经网络](神经网络.png)
 ## 神经网络图
 ![神经网络图](神经网络图.png)
@@ -115,3 +123,5 @@ SciPy: https://en.wikipedia.org/wiki/SciPy
 TesorFlow Cheat Sheet: https://www.altoros.com/tensorflow-cheat-sheet.html
 
 Tensor Flow: https://en.wikipedia.org/wiki/TensorFlow
+
+

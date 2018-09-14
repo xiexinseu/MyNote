@@ -1,6 +1,8 @@
 # 运行thchs30-清华大学中文语料库
 
-<!-- toc -->
+[TOC]
+
+
 
 Kaldi中文语音识别公共数据集一共有4个（据我所知），分别是：
 
@@ -52,7 +54,7 @@ c)这两个语言模型都是由SRILM工具训练得到。
 
 ## 修改脚本
 1.首先修改s5下面的cmd.sh脚本，把原脚本注释掉，修改为本地运行：
-```
+```bash
 #export train_cmd=queue.pl
 #export decode_cmd="queue.pl --mem 4G"
 #export mkgraph_cmd="queue.pl --mem 8G"
@@ -65,12 +67,12 @@ export cuda_cmd="run.pl --gpu 1"
 2.然后修改s5下面的run.sh脚本，需要修改两个地方：
 
 第一个地方是修改并行任务的数量，可以根据cpu的个数来定
-```
+```bash
 #n=4      #parallel jobs
 n=2      #parallel jobs
 ```
 第二个地方是修改数据集放的位置，例如我修改的为：
-```
+```bash
 #thchs=/nfs/public/materials/data/thchs30-openslr
 thchs=/media/xiexin/98BC1B8BBC1B62D4/work/ProFromGitHub/kaldi/egs/thchs30/thchs30-openslr
 ```
@@ -94,24 +96,24 @@ thchs=/media/xiexin/98BC1B8BBC1B62D4/work/ProFromGitHub/kaldi/egs/thchs30/thchs3
 
 
 1.train_mono.sh 用来训练单音子隐马尔科夫模型，一共进行40次迭代，每两次迭代进行一次对齐操作
-```
+```bash
 gmm-init-mono->compile-train-graphs->align-equal-compiled->gmm-est->
 {gmm-align-compiled->gmm-acc-stats-ali->gmm-est}40->analyze_alignments.sh
 ```
 2.train_deltas.sh 用来训练与上下文相关的三音子模型
-```
+```bash
 check_phones_compatible.sh->acc-tree-stats->sum-tree-stats->cluster-phones->compile-questions->
 build-tree->gmm-init-model->gmm-mixup->convert-ali->compile-train-graphs->
 {gmm-align-compiled->gmm-acc-stats-ali->gmm-est}35->analyze_alignments.sh
 ```
 3.train_lda_mllt.sh 用来进行线性判别分析和最大似然线性转换
-```
+```bash
 check_phones_compatible.sh->split_data.sh->ali-to-post->est-lda->acc-tree-stats->sum-tree-stats->
 cluster-phones->compile-questions->build-tree->gmm-init-model->convert-ali->compile-train-graphs->
 {gmm-align-compiled->gmm-acc-stats-ali->gmm-est}35->analyze_alignments.sh
 ```
 4.train_sat.sh 用来训练发音人自适应，基于特征空间最大似然线性回归
-```
+```bash
 check_phones_compatible.sh->ali-to-post->acc-tree-stats->sum-tree-stats->cluster-phones->compile-questions->
 build-tree->gmm-init-model->gmm-mixup->convert-ali->compile-train-graphs->
 {gmm-align-compiled->(ali-to-post->)gmm-acc-stats-ali->gmm-est}35->ali-to-post->
@@ -119,13 +121,13 @@ gmm-est->analyze_alignments.sh
 ```
 5.train_quick.sh 用来在现有特征上训练模型。
 对于当前模型中在树构建之后的每个状态，它基于树统计中的计数的重叠判断的相似性来选择旧模型中最接近的状态。
-```
+```bash
 check_phones_compatible.sh->ali-to-post->est-lda->acc-tree-stats->sum-tree-stats->
 cluster-phones->compile-questions->build-tree->gmm-init-model->convert-ali->compile-train-graphs->
 {gmm-align-compiled->gmm-acc-stats-ali->gmm-est}20->analyze_alignments.sh
 ```
 6.run_dnn.sh 用来训练DNN，包括xent和MPE，
-```
+```bash
 {make_fbank.sh->compute_cmvn_stats.sh}[train,dev,test]->train.sh->{decode.sh}[phone,word]->
 align.sh->make_denlats.sh->train_mpe.sh->{{decode.sh}[phone,word]}3
 ```
@@ -137,13 +139,13 @@ sMBR的目的是最大化从参考转录对齐导出的状态标签的期望正�
 在第一轮迭代后重新生成词图，我们观察到快速收敛。 
 我们支持MMI, BMMI, MPE 和sMBR训练。所有的技术在Switchboard 100h集上是相同的，仅仅在sMBR好一点点。 
 在sMBR优化中，我们在计算近似正确率的时候忽略了静音帧。
-```
+```bash
 {nnet-train-mpe-sequential}3->make_priors.sh
 ```
 
 8.train_dae.sh 用来实验基于dae的去噪效果
 
-```
+```bash
 compute_cmvn_stats.sh->{add-noise-mod.py->make_fbank.sh->compute_cmvn_stats.sh}[train,dev,test]->
 train.sh->nnet-concat->{{decode.sh}[phone,word]}[train,dev,test]
 ```
@@ -155,7 +157,7 @@ train.sh->nnet-concat->{{decode.sh}[phone,word]}[train,dev,test]
 我们使用提前停止来防止过度拟合，为此我们测量交叉验证集合（即保持集合）上的目标函数， 
 因此需要两对特征对齐dir来执行监督训练
 
-```
+```bash
 feat-to-dim->nnet-initialize->compute-cmvn-stats->nnet-forward->nnet-concat->cmvn-to-nnet->
 feat-to-dim->apply-cmvn->nnet-forward->nnet-initialize->train_scheduler.sh
 ```

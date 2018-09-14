@@ -1,6 +1,8 @@
 # WDAS
 
-<!-- toc -->
+[TOC]
+
+
 
 ## 参考文献or网址
 https://github.com/xanguera/BeamformIt.git
@@ -22,7 +24,7 @@ https://github.com/xanguera/BeamformIt.git
     修改`"program": "${workspaceFolder}/BeamformIt",`
     再F5启动调试。
     修改
-    ```
+    ```json
     "args": [
         "--scroll_size" 250 \
         "--window_size" 500 \
@@ -41,11 +43,12 @@ https://github.com/xanguera/BeamformIt.git
         "--show_id" "F02_011C021A_BUS.CH1" \
         "--result_dir" "./output/F02_011C021A_BUS.CH1"
     ],
-    ````
+    ​````
     可以接受输入参数
+    ```
 
 5. 通过注释do_beamforming.sh的最后部分，不调用函数，得到函数的输入参数
-```
+```json
 # ./BeamformIt \
 #     --scroll_size 250 \
 #     --window_size 500 \
@@ -64,4 +67,6 @@ https://github.com/xanguera/BeamformIt.git
 #     --show_id ${outName} \
 #     --result_dir ./output/${outName}
 ```
-    通过echo返回${outName}需要的输入参数。
+```json
+通过echo返回${outName}需要的输入参数。
+```

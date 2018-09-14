@@ -7,7 +7,9 @@
         * [cgmmmvdr](beamforming/cgmmmvdr/cgmmmvdr.md)
         * [WDAS](beamforming/WDAS/WDAS.md)
     * [distantASR](distantASR/distantASR.md)
+    * [AI算法工程师手册](AI算法工程师手册/AI算法工程师手册.md)
     * [AI学习](AI学习/AI学习.md)
+    * [最受欢迎机器学习论文+代码速查](最受欢迎机器学习论文+代码速查/最受欢迎机器学习论文+代码速查.md)
     * [kaldi学习](kaldi学习/kaldi学习.md)
         * [kaldi安装编译](kaldi学习/kaldi安装编译.md)
         * [kaldi实例yesno和timit](kaldi学习/kaldi实例yesno和timit.md)
@@ -17,6 +19,8 @@
     * [tensorflow-speech-recognition](tensorflow-speech-recognition/tensorflow-speech-recognition.md)
     * [网页&本地收藏](网页&本地收藏/网页&本地收藏.md)
     * [杂项](杂项/杂项.md)
+        * [latex常用符号](杂项/latex常用符号/latex常用符号.md)
+        * [ubuntu共享](杂项/ubuntu共享/ubuntu共享.md)
         * [vscode内存查看](杂项/vscode内存查看/vscode内存查看.md)
         * [vscode调试c_c++](杂项/vscode调试c_c++/vscode调试c_c++.md)
 

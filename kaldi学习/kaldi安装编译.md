@@ -1,6 +1,9 @@
 # kaldi安装编译
 
-<!-- toc -->
+[TOC]
+
+
+
 ## 下载
 `git clone https://github.com/kaldi-asr/kaldi.git kaldi-trunk --origin golden`
 
@@ -31,7 +34,7 @@ zlib
 libatal 
 wget
 安装方法为在shell里输入：
-```
+```bash
 sudo apt-get install subversion
 sudo apt-get install automake
 sudo apt-get install autoconf

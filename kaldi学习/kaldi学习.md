@@ -1,6 +1,9 @@
 # kaldi学习
 
-<!-- toc -->
+[TOC]
+
+
+
 ## kaldi安装编译
 [kaldi安装编译](kaldi安装编译.md)
 ## kaldi实例yesno和timit

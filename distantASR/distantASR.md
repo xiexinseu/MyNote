@@ -1,5 +1,7 @@
 # distantASR
-<!-- toc -->
+[TOC]
+
+
 
 ## 工程网址如下：
 https://github.com/mmdagent/distantspeechrecognition-mirror.git
@@ -17,7 +19,7 @@ https://blog.csdn.net/veryitman/article/details/17398151
 
 * 配置path出现问题。
 直接打开~/.bashrc，添加
-```
+```bash
 # add swig to the path
 export SWIG_PATH=/home/xiexin/swigtool/bin
 export PATH=$SWIG_PATH:$PATH
@@ -42,26 +44,27 @@ swig: error while loading shared libraries: libpcre.so.1: cannot open shared obj
 
 
 6. Configuration问题
-```
+```bash
   cd ~/src/asr
   ./autogen.sh
   ./configure
 ```
 发现找不到Python library path，
 修改
-```
+
+```bash
 	for i in "$python_path/lib64/python$PYTHON_VERSION/config/" "$python_path/lib64/python$PYTHON_VERSION/" "$python_path/lib64/python/config/" "$python_path/lib64/python/" "$python_path/lib/python$PYTHON_VERSION/config/" "$python_path/lib/python$PYTHON_VERSION/" "$python_path/lib/python/config/" "$python_path/lib/python/" "$python_path/" ; do
 ```
 为
-```
+```bash
 	for i in "$python_path/lib64/python$PYTHON_VERSION/-3.6m-x86_64-linux-gnu/" "$python_path/lib64/python$PYTHON_VERSION/" "$python_path/lib64/python/-3.6m-x86_64-linux-gnu/" "$python_path/lib64/python/" "$python_path/lib/python$PYTHON_VERSION/-3.6m-x86_64-linux-gnu/" "$python_path/lib/python$PYTHON_VERSION/" "$python_path/lib/python/-3.6m-x86_64-linux-gnu/" "$python_path/lib/python/" "$python_path/" ; do
 ```
 修改
-```
+```bash
 		python_path=`find $i -type f -name libpython$PYTHON_VERSION.* -print| head -n 1`
 ```
 为
-```
+```bash
 		python_path=`find $i -type f -name libpython$PYTHON_VERSIONm.* -print| head -n 1`
 ```
 因为观察anaconda中Python的文件夹除了带版本号，还多了个m。

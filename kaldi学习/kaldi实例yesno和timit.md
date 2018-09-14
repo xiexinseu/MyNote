@@ -1,6 +1,7 @@
 # kaldi实例yesno和timit
 
-<!-- toc -->
+[TOC]
+
 Kaldi的例子有很多，在egs目录下面，对Kaldi不熟悉的小白们可以先从yesno和timit两个例子入手，这样可以对Kaldi有个直观的认识。
 
 ## 运行yesno实例
@@ -20,7 +21,7 @@ Timit是LDC搜集的一个语料库，TIMIT语音库有着准确的音素标注�
 2. 把timit.rar解压后的四个文件放入data中，包括：DOC, TEST, TRAIN三个文件夹和README.DOC文件；
 
 3. 修改s5文件夹下的cmd.sh，因为是在虚拟机上跑的，所以代码修改为单机版，其它代码都注释掉，只保留下面4行：
-```
+```bash
 export train_cmd=run.pl
 export decode_cmd=run.pl
 export cuda_cmd=run.pl
@@ -28,7 +29,7 @@ export mkgraph_cmd=run.pl
 ```
 
 4. 然后path.sh定义各种工具包的路径。path.sh修改如下：
-```
+```bash
 export KALDI_ROOT=`pwd`/../../..
 [ -f $KALDI_ROOT/tools/env.sh ] && . $KALDI_ROOT/tools/env.sh
 #export PATH=$PWD/utils/:$KALDI_ROOT/tools/openfst/bin:$KALDI_ROOT/tools/irstlm/bin/:$PWD:$PATH
@@ -41,7 +42,7 @@ export LD_LIBRARY_PATH=$KALDI_ROOT/tools/openfst/lib:$LD_LIBRARY_PATH
 ```
 
 5. 修改s5文件夹下的run.sh，修改timit=开头的那行代码即可，该行代码是告诉程序我们下载好的语料库的位置在哪里，例如我修改后的代码为：
-```
+```bash
 #timit=/export/corpora5/LDC/LDC9351/timit/TIMIT # @JHU
 timit=/root/kaldi-trunk/egs/timit/s5/data
 ```
