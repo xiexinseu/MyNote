@@ -50,6 +50,14 @@ $$
 
 ![img](frac.GIF)
 
+## 微分运算符
+
+```$\partial$```
+
+$\partial$
+
+
+
 ## 积分运算符
 
 用\int 来生成。求和运算符（sum operator）由\sum 生成。乘积运算符（product operator）由\prod 生成。上限和下限用^ 和_来生成，类似于上标和下标
