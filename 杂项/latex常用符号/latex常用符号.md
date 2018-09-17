@@ -28,6 +28,25 @@ $$
 
 ![img](sqrt.GIF)
 
+## 上下标
+
+  一般的运算符有两种上下标形式，在latex中分别如下表示：
+\bigvee_{i=1}^n    把i=1和n放到\bigvee的右下方和右上方；
+\bigvee\limits_{i=1}^n   把i=1和n放到\bigvee的正下方和正上方；
+\limits的作用是把i=1和n放到\bigvee的正下方和正上方；
+
+对于非operator，不可以直接使用\limits来把上标和下标放在正上方和正下方，而需要先使用\mathop把非operator转换成operator之后再使用\limits，比如：
+\cap\limits_1^n 无法编译，但如下式子可以编译：
+\mathop\cap\limits__1^n
+
+对于普通符号，比如在A上面添加1或者n，也是使用\mathop，如下：
+
+```latex
+$\mathop{A}\limits_1^n$
+```
+
+  $\mathop{A}\limits_1^n$
+
 ## 表达式的上、下方画出水平线
 
 命令\overline 和\underline 
