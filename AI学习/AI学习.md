@@ -4,11 +4,77 @@
 
 本文涵盖了神经网络结构、机器学习、TensorFlow、Pandas、Numpy、Python、Scikit-Learn、Scipy等的基本概念与使用方法。
 
-
-
-
-
 来源：https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463
+
+## 微积分
+[Calculus_Cheat_Sheet_All_Reduced](Calculus_Cheat_Sheet_All_Reduced.pdf)
+
+![Calculus_Cheat_Sheet_All_Reduced](Calculus_Cheat_Sheet_All_Reduced1.png)
+
+![Calculus_Cheat_Sheet_All_Reduced](Calculus_Cheat_Sheet_All_Reduced2.png)
+
+![Calculus_Cheat_Sheet_All_Reduced](Calculus_Cheat_Sheet_All_Reduced3.png)
+
+![Calculus_Cheat_Sheet_All_Reduced](Calculus_Cheat_Sheet_All_Reduced4.png)
+
+![Calculus_Cheat_Sheet_All_Reduced](Calculus_Cheat_Sheet_All_Reduced5.png)
+
+![Calculus_Cheat_Sheet_All_Reduced](Calculus_Cheat_Sheet_All_Reduced6.png)
+
+## 概率论
+[probability_cheatsheet](probability_cheatsheet.pdf)
+
+![probability_cheatsheet1](probability_cheatsheet1.png)
+
+![probability_cheatsheet2](probability_cheatsheet2.png)
+
+![probability_cheatsheet3](probability_cheatsheet3.png)
+
+![probability_cheatsheet4](probability_cheatsheet4.png)
+
+![probability_cheatsheet5](probability_cheatsheet5.png)
+
+![probability_cheatsheet6](probability_cheatsheet6.png)
+
+![probability_cheatsheet7](probability_cheatsheet7.png)
+
+![probability_cheatsheet8](probability_cheatsheet8.png)
+
+![probability_cheatsheet9](probability_cheatsheet9.png)
+
+![probability_cheatsheet10](probability_cheatsheet10.png)
+
+## 统计学
+[stats_handout](stats_handout.pdf)
+
+![stats_handout](stats_handout1.png)
+
+![stats_handout](stats_handout2.png)
+
+![stats_handout](stats_handout3.png)
+
+![stats_handout](stats_handout4.png)
+
+![stats_handout](stats_handout5.png)
+
+![stats_handout](stats_handout6.png)
+
+![stats_handout](stats_handout7.png)
+
+![stats_handout](stats_handout8.png)
+
+## 线性代数
+[linear_algebra_in_4_pages](linear_algebra_in_4_pages.pdf)
+
+![linear_algebra_in_4_pages1](linear_algebra_in_4_pages1.png)
+
+![linear_algebra_in_4_pages2](linear_algebra_in_4_pages2.png)
+
+![linear_algebra_in_4_pages3](linear_algebra_in_4_pages3.png)
+
+![linear_algebra_in_4_pages4](linear_algebra_in_4_pages4.png)
+
+
 
 ## 神经网络
 
@@ -26,7 +92,12 @@
 Scikit-learn（以前称为scikits.learn）是机器学习库。 它具有各种分类，回归和聚类算法，包括支持向量机，随机森林，梯度增强，k-means和DBSCAN等。
 ![Scikit-learn](Scikit-learn.png)
 
+[Python数据科学速查表-Scikit-Learn](中文-pdf/Python数据科学速查表-Scikit-Learn.pdf)
+
 ![Python数据科学速查表-Scikit-Learn](Python数据科学速查表-Scikit-Learn.png)
+
+## 监督和非监督算法公式集
+[监督和非监督算法公式集](监督和非监督算法公式集.pdf)
 
 ## 机器学习：算法
 Microsoft Azure的这款机器学习备忘单将帮助您为预测分析解决方案选择合适的机器学习算法。
@@ -39,28 +110,39 @@ Microsoft Azure的这款机器学习备忘单将帮助您为预测分析解决�
 
 ## 数据科学中的Python
 
+[Python数据科学速查表-Python基础](中文-pdf/Python数据科学速查表-Python基础.pdf)
+
 ![Python数据科学速查表-Python基础](Python数据科学速查表-Python基础.png)
 
 ![python数据科学](python数据科学.png)
+
+[python基础](python基础.pdf)
 
 ![python基础1](python基础1.png)
 
 ![python基础2](python基础2.png)
 
 ## Bokeh
+[Python数据科学速查表-Bokeh](中文-pdf/Python数据科学速查表-Bokeh.pdf)
+
 ![Python数据科学速查表-Bokeh](Python数据科学速查表-Bokeh.png)
 
 ![python大数据](python大数据.png)
 
 ## Python数据科学速查表-JupyterNotebook
+[Python数据科学速查表-JupyterNotebook](中文-pdf/Python数据科学速查表-JupyterNotebook.pdf)
+
 ![Python数据科学速查表-JupyterNotebook](Python数据科学速查表-JupyterNotebook.png)
 
 ## TensorFlow
 ![TensorFlow](tensorflow.png)
+
 ## Keras
 2017年，Google的TensorFlow团队决定在TensorFlow的核心库中支持Keras。 Chollet解释说，Keras被认为是一个界面而不是端到端的机器学习框架。 它提供了更高级别，更直观的抽象集，无论后端科学计算库如何，都可以轻松配置神经网络。
 
 ![keras](keras.jpeg)
+
+[Python数据科学速查表-Keras](中文-pdf/Python数据科学速查表-Keras.pdf)
 
 ![Python数据科学速查表-Keras](Python数据科学速查表-Keras.png)
 
@@ -68,14 +150,39 @@ Microsoft Azure的这款机器学习备忘单将帮助您为预测分析解决�
 NumPy通过提供多维数组以及在数组上高效运行的函数和运算符来提高运算效率，需要重写一些代码，主要是使用NumPy的内部循环。
 ![NumPy](NumPy.png)
 
+[Python数据科学速查表-Numpy基础](中文-pdf/Python数据科学速查表-Numpy基础.pdf)
+
 ![Python数据科学速查表-Numpy基础](Python数据科学速查表-Numpy基础.png)
+
+[numpy-cheat-sheet](numpy-cheat-sheet.pdf)
+
+![numpy-cheat-sheet](numpy-cheat-sheet.png)
+
+[numpy-cheat-sheet2](numpy-cheat-sheet2.pdf)
+
+![numpy-cheat-sheet2](numpy-cheat-sheet2.png)
 ## Pandas
 “Pandas”这个名称来自术语““panel data ”，这是一个多维结构化数据集的计量经济学术语。
 ![Pandas](Pandas.png)
 
+[pandas](pandas.pdf)
+
+![Pandas1](Pandas1.png)
+
+![Pandas2](Pandas2.png)
+
+![Pandas3](Pandas3.png)
+
+![Pandas4](Pandas4.png)
+
+[Python数据科学速查表-Pandas基础](中文-pdf/Python数据科学速查表-Pandas基础.pdf)
+
 ![Python数据科学速查表-Pandas基础](Python数据科学速查表-Pandas基础.png)
 
+[Python数据科学速查表-Pandas进阶](中文-pdf/Python数据科学速查表-Pandas进阶.pdf)
+
 ![Python数据科学速查表-Pandas进阶](Python数据科学速查表-Pandas进阶.png)
+
 ## 数据清洗
 Data Wrangling 是一款好用的数据清洗软件。
 ![数据清洗](数据清洗.jpeg)
@@ -89,12 +196,18 @@ SciPy建立在NumPy数组对象之上，是NumPy工具集的一部分。
 ## Matplotlib
 ![Matplotlib](Matplotlib.png)
 
+[Python数据科学速查表-Matplotlib绘图](中文-pdf/Python数据科学速查表-Matplotlib绘图.pdf)
+
 ![Python数据科学速查表-Matplotlib绘图](Python数据科学速查表-Matplotlib绘图.png)
 
 ## Python数据科学速查表-Seaborn
+[Python数据科学速查表-Seaborn](中文-pdf/Python数据科学速查表-Seaborn.pdf)
+
 ![Python数据科学速查表-Seaborn](Python数据科学速查表-Seaborn.png)
 
 ## Python数据科学速查表-导入数据
+[Python数据科学速查表-导入数据](中文-pdf/Python数据科学速查表-导入数据.pdf)
+
 ![Python数据科学速查表-导入数据](Python数据科学速查表-导入数据.png)
 
 ## 数据可视化
