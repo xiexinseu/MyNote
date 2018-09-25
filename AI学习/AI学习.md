@@ -25,23 +25,57 @@
 ## Scikit-learn
 Scikit-learn（以前称为scikits.learn）是机器学习库。 它具有各种分类，回归和聚类算法，包括支持向量机，随机森林，梯度增强，k-means和DBSCAN等。
 ![Scikit-learn](Scikit-learn.png)
+
+![Python数据科学速查表-Scikit-Learn](Python数据科学速查表-Scikit-Learn.png)
+
 ## 机器学习：算法
 Microsoft Azure的这款机器学习备忘单将帮助您为预测分析解决方案选择合适的机器学习算法。
+
 ![机器学习备忘单](机器学习备忘单.png)
+
+## 机器学习：算法(Python&R codes)
+
+![机器学习算法Python&RCodes](机器学习算法Python&RCodes.jpg)
+
 ## 数据科学中的Python
+
+![Python数据科学速查表-Python基础](Python数据科学速查表-Python基础.png)
+
 ![python数据科学](python数据科学.png)
+
+![python基础1](python基础1.png)
+
+![python基础2](python基础2.png)
+
+## Bokeh
+![Python数据科学速查表-Bokeh](Python数据科学速查表-Bokeh.png)
+
 ![python大数据](python大数据.png)
+
+## Python数据科学速查表-JupyterNotebook
+![Python数据科学速查表-JupyterNotebook](Python数据科学速查表-JupyterNotebook.png)
+
 ## TensorFlow
 ![TensorFlow](tensorflow.png)
 ## Keras
 2017年，Google的TensorFlow团队决定在TensorFlow的核心库中支持Keras。 Chollet解释说，Keras被认为是一个界面而不是端到端的机器学习框架。 它提供了更高级别，更直观的抽象集，无论后端科学计算库如何，都可以轻松配置神经网络。
+
 ![keras](keras.jpeg)
+
+![Python数据科学速查表-Keras](Python数据科学速查表-Keras.png)
+
 ## NumPy
 NumPy通过提供多维数组以及在数组上高效运行的函数和运算符来提高运算效率，需要重写一些代码，主要是使用NumPy的内部循环。
 ![NumPy](NumPy.png)
+
+![Python数据科学速查表-Numpy基础](Python数据科学速查表-Numpy基础.png)
 ## Pandas
 “Pandas”这个名称来自术语““panel data ”，这是一个多维结构化数据集的计量经济学术语。
 ![Pandas](Pandas.png)
+
+![Python数据科学速查表-Pandas基础](Python数据科学速查表-Pandas基础.png)
+
+![Python数据科学速查表-Pandas进阶](Python数据科学速查表-Pandas进阶.png)
 ## 数据清洗
 Data Wrangling 是一款好用的数据清洗软件。
 ![数据清洗](数据清洗.jpeg)
@@ -54,6 +88,15 @@ SciPy建立在NumPy数组对象之上，是NumPy工具集的一部分。
 ![SciPy](SciPy.png)
 ## Matplotlib
 ![Matplotlib](Matplotlib.png)
+
+![Python数据科学速查表-Matplotlib绘图](Python数据科学速查表-Matplotlib绘图.png)
+
+## Python数据科学速查表-Seaborn
+![Python数据科学速查表-Seaborn](Python数据科学速查表-Seaborn.png)
+
+## Python数据科学速查表-导入数据
+![Python数据科学速查表-导入数据](Python数据科学速查表-导入数据.png)
+
 ## 数据可视化
 ![数据可视化](数据可视化.jpeg)
 ![数据可视化2](数据可视化2.jpeg)
