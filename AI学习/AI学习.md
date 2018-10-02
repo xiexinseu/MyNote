@@ -280,4 +280,4 @@ TesorFlow Cheat Sheet: https://www.altoros.com/tensorflow-cheat-sheet.html
 
 Tensor Flow: https://en.wikipedia.org/wiki/TensorFlow
 
-
+##### 
