@@ -89,10 +89,61 @@
 这个部分展示了Scikit-learn中每个算法的适用范围及优缺点，可以帮你快速找到解决问题的方法。
 ![Scikit-learn框图](Scikit-learn框图.png)
 ## Scikit-learn
+
 Scikit-learn（以前称为scikits.learn）是机器学习库。 它具有各种分类，回归和聚类算法，包括支持向量机，随机森林，梯度增强，k-means和DBSCAN等。
 ![Scikit-learn](Scikit-learn.png)
 
 [Python数据科学速查表-Scikit-Learn](中文-pdf/Python数据科学速查表-Scikit-Learn.pdf)
+
+```python
+# Step 1: Importing the libraries
+import numpy as np
+import pandas as pd
+# Step 2: Importing dataset
+dataset = pd.read_csv('./datasets/Data.csv')
+X = dataset.iloc[ : , :-1].values
+Y = dataset.iloc[ : , 3].values
+# Step 3: Handling the missing data
+from sklearn.preprocessing import Imputer
+imputer = Imputer(missing_values = "NaN", strategy = "mean", axis = 0)
+imputer = imputer.fit(X[ : , 1:3])
+X[ : , 1:3] = imputer.transform(X[ : , 1:3])
+# Step 4: Encoding categorical data
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+labelencoder_X = LabelEncoder()
+X[ : , 0] = labelencoder_X.fit_transform(X[ : , 0])
+# Creating a dummy variable
+onehotencoder = OneHotEncoder(categorical_features = [0])
+X = onehotencoder.fit_transform(X).toarray()
+labelencoder_Y = LabelEncoder()
+Y =  labelencoder_Y.fit_transform(Y)
+# Step 5: Splitting the datasets into training sets and Test sets
+from sklearn.cross_validation import train_test_split
+X_train, X_test, Y_train, Y_test = train_test_split( X , Y , test_size = 0.2, random_state = 0)
+# Step 6: Feature Scaling
+from sklearn.preprocessing import StandardScaler
+sc_X = StandardScaler()
+X_train = sc_X.fit_transform(X_train)
+X_test = sc_X.fit_transform(X_test)
+```
+
+**OneHotEncoder解释**
+
+```python
+import numpy as np 
+from sklearn.preprocessing import OneHotEncoder 
+enc = OneHotEncoder() 
+enc.fit([[0, 0, 3], [1, 1, 0], [0, 2, 1],[1, 0, 2]]) 
+print "enc.n_values_ is:",enc.n_values_
+print "enc.feature_indices_ is:",enc.feature_indices_
+print enc.transform([[0, 1, 1]]).toarray()
+
+enc.n_values_ is: [2 3 4]
+enc.feature_indices_ is: [0 2 5 9]
+[[ 1. 0. 0. 1. 0. 0. 1. 0. 0.]]
+```
+
+**首先由四个样本数据[0, 0, 3], [1, 1, 0], [0, 2, 1],[1, 0, 2]，共有三个属性特征，也就是三列。比如第一列，有0,1两个属性值，第二列有0,1,2三个值.....，那么enc.n_values_就是每个属性列不同属性值的个数，所以分别是2,3,4。再看enc.feature_indices_是对enc.n_values_的一个累加。再看[0, 1, 1]这个样本是如何转换为基于上面四个数据下的one-hot编码的。第一列：0->10；第二列：1->010；第三列：1->0100。简单解释一下，在第三列有，0,1,2,3四个值，分别对应1000,0100,0010,0001.**
 
 ![Python数据科学速查表-Scikit-Learn](Python数据科学速查表-Scikit-Learn.png)
 
