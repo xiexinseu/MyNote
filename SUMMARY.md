@@ -19,6 +19,7 @@
     * [杂项](杂项/杂项.md)
         * [latex常用符号](杂项/latex常用符号/latex常用符号.md)
         * [ubuntu共享](杂项/ubuntu共享/ubuntu共享.md)
+        * [vscode_matlab联合调试c](杂项/vscode_matlab联合调试c/vscode_matlab联合调试c.md)
         * [vscode内存查看](杂项/vscode内存查看/vscode内存查看.md)
         * [vscode调试c_c++](杂项/vscode调试c_c++/vscode调试c_c++.md)
         * [docker相关](杂项/docker相关/docker相关.md)
